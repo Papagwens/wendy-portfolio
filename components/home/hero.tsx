@@ -64,15 +64,15 @@ export const HeroSection = ({
             initial={{ opacity: 0, y: 20 }}
             transition={{ delay: 0.6, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
+            {/* Download CV Button */}
             <Link
-              download
+              download="Wendy_Paraizo_Cover_Letter.pdf"
               aria-label="Download CV in PDF format"
               className="w-full sm:w-auto"
-              href="/new CV.pdf"
+              href="/CV.pdf"
             >
               <Button
                 fullWidth
-                aria-label="Downoald CV"
                 color="primary"
                 endContent={<Icon icon="lucide:download" />}
                 size="lg"
@@ -81,6 +81,7 @@ export const HeroSection = ({
                 Download CV
               </Button>
             </Link>
+
             <Button
               fullWidth
               aria-label="View Work"
