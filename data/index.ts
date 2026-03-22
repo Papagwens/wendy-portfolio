@@ -178,6 +178,7 @@ export const DATA = {
         category: "AI & Full Stack",
         details: "This Full-Stack Intelligent App was made in a group effort to simplify complex data. The UI was a simple form where the data was entered to display an output of a fail or pass!",
         github: "https://github.com/dongligroup/ml-nn-studentpersistence", 
+        live: "",
         tech: [
           { name: "React", icon: "logos:react" },
           { name: "Flask", icon: "logos:flask" },
