@@ -69,7 +69,7 @@ export const HeroSection = ({
               download="Wendy_Paraizo_Cover_Letter.pdf"
               aria-label="Download CV in PDF format"
               className="w-full sm:w-auto"
-              href="/CV.pdf"
+              href="./CV.pdf"
             >
               <Button
               fullWidth

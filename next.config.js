@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export', 
+  basePath: '/wendy-portfolio',
   images: {
     unoptimized: true,
     remotePatterns: [
