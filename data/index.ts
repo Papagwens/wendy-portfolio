@@ -135,10 +135,8 @@ export const DATA = {
         title: "Visitara",
         description:
           "A community-focused review platform that lets users discover, rate, and share your honest experiences with local businesses.",
-        image: "/visitara-screenshot.png", 
-        gallery: [
-          "./visitara-screenshot.png",
-        ],
+        image: "./visitara-screenshot.png", 
+        gallery: [],
         category: "Web Development",
         details:
           "Vistara is a Yelp-inspired platform designed to promote local businesses to new customers. Built with a focus on user experience, allowing anyone to sign up and start rating restaurants or services instantly. Behind the scenes, I implemented a robust MongoDB database to handle user reviews and business data, ensuring a fast and reliable experience for all.",
