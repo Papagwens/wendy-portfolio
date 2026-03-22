@@ -29,7 +29,7 @@ export const WorkSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
         >
           <GradientText
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-pink-300 to-rose-300 bg-clip-text text-transparent"
             text={sectionTitle}
           />
           <p className="text-foreground-600 text-lg max-w-2xl mx-auto">

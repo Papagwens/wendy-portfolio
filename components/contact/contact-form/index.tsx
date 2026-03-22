@@ -126,8 +126,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         <div className="flex flex-col gap-4">
           <Button
             aria-label="Sending"
-            className="w-full h-14 text-base font-medium"
-            color="primary"
+            className="bg-pink-200 hover:bg-pink-300 text-pink-400 font-semibold shadow-lg shadow-pink-200/50"
             isDisabled={!isValid || isSubmitting}
             isLoading={isSubmitting}
             size="lg"

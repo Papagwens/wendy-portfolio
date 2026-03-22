@@ -36,7 +36,7 @@ export const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
         >
           <GradientText
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-pink-300 to-rose-300 bg-clip-text text-transparent"
             text={sectionTitle}
           />
           <p className="text-foreground-600 text-lg max-w-2xl mx-auto">
@@ -50,7 +50,7 @@ export const TestimonialsSection = () => {
               <Button
                 isIconOnly
                 aria-label="Previous testimonial"
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-10"
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-10 hover:text-pink-400"
                 radius="full"
                 variant="flat"
                 onClick={() => handleNavigation(prevTestimonial)}
@@ -63,7 +63,7 @@ export const TestimonialsSection = () => {
               <Button
                 isIconOnly
                 aria-label="Next testimonial"
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-10"
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-10 hover:text-pink-400"
                 radius="full"
                 variant="flat"
                 onClick={() => handleNavigation(nextTestimonial)}
@@ -101,6 +101,7 @@ export const TestimonialsSection = () => {
               <Button
                 isIconOnly
                 aria-label="Previous testimonial"
+                className="hover:text-pink-400"
                 radius="full"
                 size="sm"
                 variant="flat"
@@ -119,7 +120,9 @@ export const TestimonialsSection = () => {
                   key={index}
                   animate={index === currentIndex ? "active" : "inactive"}
                   aria-label={`Go to testimonial ${index + 1}`}
-                  className="mx-1 h-2 w-2 rounded-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  className={`mx-1 h-2 w-2 rounded-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-pink-300 ${
+                    index === currentIndex ? 'bg-pink-400' : 'bg-divider'
+                  }`}
                   variants={dotVariants}
                   onClick={() => {
                     setCurrentIndex(index);
@@ -133,6 +136,7 @@ export const TestimonialsSection = () => {
               <Button
                 isIconOnly
                 aria-label="Next testimonial"
+                className="hover:text-pink-400"
                 radius="full"
                 size="sm"
                 variant="flat"

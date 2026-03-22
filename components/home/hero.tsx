@@ -41,7 +41,7 @@ export const HeroSection = ({
         >
           <motion.h1
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-500 to-secondary-500 dark:from-cyan-200 dark:to-cyan-300 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-pink-200 to-rose-200 dark:from-pink-300 dark:to-rose-300 bg-clip-text text-transparent"
             initial={{ opacity: 0, y: 20 }}
             transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
@@ -72,12 +72,11 @@ export const HeroSection = ({
               href="/CV.pdf"
             >
               <Button
-                fullWidth
-                color="primary"
-                endContent={<Icon icon="lucide:download" />}
-                size="lg"
-                variant="shadow"
-              >
+              fullWidth
+              className="bg-pink-200 hover:bg-pink-300 text-pink-400 font-semibold shadow-lg shadow-pink-200/50"
+              endContent={<Icon icon="lucide:download" />}
+              size="lg"
+            >
                 Download CV
               </Button>
             </Link>
@@ -85,8 +84,7 @@ export const HeroSection = ({
             <Button
               fullWidth
               aria-label="View Work"
-              className="w-full sm:w-auto"
-              color="primary"
+              className="w-full sm:w-auto border-pink-300 text-pink-400 hover:bg-pink-50"
               endContent={<Icon icon="lucide:arrow-down" />}
               size="lg"
               variant="bordered"

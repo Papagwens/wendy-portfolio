@@ -25,14 +25,14 @@ export const ProjectModal = ({
   return (
     <Modal
       backdrop="blur"
-      className="border border-black/10 dark:border-white/10 bg-white/90 dark:bg-black/70 shadow-md dark:shadow-cyan-900/40 rounded-xl overflow-hidden transition-colors"
+      className="border border-black/10 dark:border-white/10 bg-white/90 dark:bg-black/70 shadow-md dark:shadow-pink-900/40 rounded-xl overflow-hidden transition-colors"
       isOpen={isOpen}
       scrollBehavior="inside"
       size="xl"
       onClose={onClose}
     >
       <ModalContent>
-        <ModalHeader className="text-xl font-bold text-primary-700 border-b  border-white/20">
+        <ModalHeader className="text-xl font-bold bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent border-b border-divider">
           {project.title}
         </ModalHeader>
         <ScrollShadow hideScrollBar size={60}>
@@ -41,7 +41,7 @@ export const ProjectModal = ({
               <ImageGallery images={project.gallery} />
             )}
 
-            <p className="text-sm text-primary-500 mb-3 font-medium uppercase tracking-wide">
+            <p className="text-sm text-pink-400 mb-3 font-medium uppercase tracking-wide">
               {project.category}
             </p>
 

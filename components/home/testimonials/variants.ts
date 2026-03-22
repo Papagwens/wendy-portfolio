@@ -5,6 +5,7 @@ export const variants = {
 };
 
 export const dotVariants = {
-  active: { scale: 1.2, backgroundColor: "#006fed" },
+  // UPDATED: Changed from Blue (#006fed) to Pastel Pink (#F472B6)
+  active: { scale: 1.2, backgroundColor: "#F472B6" }, 
   inactive: { scale: 1, backgroundColor: "#D1D5DB" },
 };

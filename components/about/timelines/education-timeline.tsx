@@ -13,7 +13,12 @@ interface EducationTimelineProps {
 
 export const EducationTimeline = ({ education }: EducationTimelineProps) => (
   <div className="mb-20">
-    <SectionHeader icon="mdi:school-outline" title="Education" />
+    {/* UPDATED: Changed SectionHeader icon color to pink */}
+    <SectionHeader 
+      icon="mdi:school-outline" 
+      title="Education" 
+      className="text-pink-400" 
+    />
 
     <motion.ol
       className="relative ml-6"
@@ -22,7 +27,9 @@ export const EducationTimeline = ({ education }: EducationTimelineProps) => (
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
-      <div className="absolute top-2 left-2 bottom-0 w-px bg-primary-500" />
+      {/* UPDATED: Vertical timeline line changed from primary-500 to pink-400 */}
+      <div className="absolute top-2 left-2 bottom-0 w-px bg-pink-400" />
+      
       {education.map((item, idx) => (
         <TimelineItem
           key={idx}

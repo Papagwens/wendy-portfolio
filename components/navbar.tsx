@@ -40,11 +40,11 @@ export const Navigation = () => {
             transition={{ duration: 0.5 }}
           >
             <Link
-              className="font-bold text-inherit text-xl bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent"
+              className="text-pink-400 font-semibold"
               href="/"
               onClick={() => setIsMenuOpen(false)}
             >
-              Wendy Paraizo
+              (˶ᵔ ᵕ ᵔ˶)
             </Link>
           </motion.div>
         </NavbarBrand>
@@ -60,12 +60,12 @@ export const Navigation = () => {
                 <Link
                   className={`flex items-center gap-2 transition-colors ${
                     pathname === item.href
-                      ? "text-primary-500 font-semibold"
-                      : "text-foreground hover:text-primary-500"
+                      ? "from-pink-300 to-rose-300 font-semibold"
+                      : "text-foreground hover:text-pink-400"
                   }`}
                   href={item.href}
                 >
-                  <Icon className="w-5 h-5 text-primary-500" icon={item.icon} />
+                  <Icon className="w-5 h-5 text-pink-400" icon={item.icon} />
                   {item.name}
                 </Link>
               </motion.div>

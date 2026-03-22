@@ -59,7 +59,7 @@ export const ProjectCard = memo(function ProjectCard({
           </p>
           <Button
             aria-label="View Details"
-            className="w-full md:w-auto border-cyan-400 text-cyan-300 hover:bg-cyan-400/10 transition-colors"
+            className="border-pink-200 text-pink-400 hover:bg-pink-50 dark:hover:bg-pink-900/20"
             color="primary"
             endContent={<Icon icon="lucide:arrow-right" />}
             variant="bordered"
