@@ -84,7 +84,7 @@ export const Navigation = () => {
       </NavbarContent>
 
       {/* Mobile Menu */}
-      <NavbarMenu className="bg-background/80 backdrop-blur-lg pt-6 sm:hidden">
+      <NavbarMenu className="bg-pink-50/90 dark:bg-pink-950/80 backdrop-blur-lg pt-6 sm:hidden">
         <div className="mx-auto max-w-lg space-y-4">
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={item.name}>
@@ -94,12 +94,12 @@ export const Navigation = () => {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
               >
                 <Link
-                  className="w-full flex items-center gap-3 py-3 px-4 rounded-medium hover:bg-content1 transition-colors"
+                  className="w-full flex items-center gap-3 py-3 px-4 rounded-medium hover:bg-pink-100 dark:hover:bg-pink-900/40 transition-colors text-pink-700 dark:text-pink-300"
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <Icon className="w-5 h-5 text-primary-500" icon={item.icon} />
-                  {item.name}
+                  <Icon className="w-5 h-5 text-pink-500" icon={item.icon} />
+                  <span className="font-medium">{item.name}</span>
                 </Link>
               </motion.div>
             </NavbarMenuItem>

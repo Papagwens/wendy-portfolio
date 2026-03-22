@@ -12,7 +12,6 @@ interface ExperienceTimelineProps {
 
 export const ExperienceTimeline = ({ experience }: ExperienceTimelineProps) => (
   <div className="mb-24">
-    {/* UPDATED: Briefcase icon matches the pastel pink theme */}
     <SectionHeader 
       icon="mdi:briefcase-outline" 
       title="Experience" 
@@ -26,7 +25,6 @@ export const ExperienceTimeline = ({ experience }: ExperienceTimelineProps) => (
       viewport={{ once: true, amount: 0.2 }}
       whileInView="visible"
     >
-      {/* UPDATED: Vertical timeline line changed from primary-500 to pink-400 */}
       <div className="absolute top-2 left-2 bottom-0 w-px bg-pink-400" />
       
       {experience.map((item, idx) => (
