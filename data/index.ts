@@ -168,7 +168,7 @@ export const DATA = {
           { name: "HTML5", icon: "logos:html-5" },
           { name: "CSS3", icon: "logos:css-3" },
         ],
-      },
+      }, 
       {
         id: 4,
         title: "Student Persistence Predictor",
