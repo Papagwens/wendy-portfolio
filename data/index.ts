@@ -174,6 +174,7 @@ export const DATA = {
         title: "Student Persistence Predictor",
         description: "A predictor tool that uses AI to tell if a student is on track to pass based on the data entered.",
         image: "/spp.png", 
+        gallery: [],
         category: "AI & Full Stack",
         details: "This Full-Stack Intelligent App was made in a group effort to simplify complex data. The UI was a simple form where the data was entered to display an output of a fail or pass!",
         github: "https://github.com/dongligroup/ml-nn-studentpersistence", 
