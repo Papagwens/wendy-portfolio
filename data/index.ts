@@ -80,7 +80,7 @@ export const DATA = {
     profile: {
       name: "Wendy Paraizo",
       title: "Frontend Developer",
-      image: "/wendy.jpeg",
+      image: "./wendy.jpeg",
       description: [
         "Greetings, I'm Wendy Paraizo and have a passion for fun design and clean code. I focus on building beautiful, functional, and high-performance websites.",
         "My approach is both technical yet aesthetic. I really enjoy taking on the challenge of turning complex problems into fun user experiences. I work primarily with modern frameworks like React and Node.JS.",
@@ -137,7 +137,7 @@ export const DATA = {
           "A community-focused review platform that lets users discover, rate, and share your honest experiences with local businesses.",
         image: "/visitara-screenshot.png", 
         gallery: [
-          "/visitara-screenshot.png",
+          "./visitara-screenshot.png",
         ],
         category: "Web Development",
         details:
@@ -156,7 +156,7 @@ export const DATA = {
         title: "Interactive V-day Card",
         description:
           "A playful, interactive Valentine's Day card featuring Bubu and Dudu with a 'No' button that is impossible to click.",
-        image: "/bemine.png", 
+        image: "./bemine.png", 
         gallery: [],
         category: "Interactive",
         details:
@@ -173,7 +173,7 @@ export const DATA = {
         id: 4,
         title: "Student Persistence Predictor",
         description: "A predictor tool that uses AI to tell if a student is on track to pass based on the data entered.",
-        image: "/spp.png", 
+        image: "./spp.png", 
         gallery: [],
         category: "AI & Full Stack",
         details: "This Full-Stack Intelligent App was made in a group effort to simplify complex data. The UI was a simple form where the data was entered to display an output of a fail or pass!",
